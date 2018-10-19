@@ -18,7 +18,7 @@ class SubForm(FlaskForm):
     type = SelectField(u'分段类型', choices=type_ls)
     count = StringField('分段数', validators=[DataRequired()])
     decimal = StringField('结果位数')
-    submit = SubmitField('计算')
+    submit = SubmitField('计算(test)')
 
 
 class ResultForm(FlaskForm):
@@ -45,6 +45,6 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1234, debug=True)
+    app.run(host='0.0.0.0', port=1234, debug=False)
     # app.run(debug=True)
 
