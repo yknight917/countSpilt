@@ -18,7 +18,7 @@ class SubForm(FlaskForm):
     type = SelectField(u'分段类型', choices=type_ls)
     count = StringField('分段数', validators=[DataRequired()])
     decimal = StringField('结果位数')
-    submit = SubmitField('计算(test)')
+    submit = SubmitField('计算(test02)')
 
 
 class ResultForm(FlaskForm):
